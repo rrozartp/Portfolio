@@ -1,0 +1,13 @@
+$maincolor: rgb(24, 119, 242);
+$width: 768px;
+@mixin mobile {
+    @media (max-width: #{$width}) {
+        @content;
+    }
+}
+
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
